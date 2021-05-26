@@ -1,5 +1,6 @@
 \chapter*{\abstractname} % Korrekter Name für den Abstract in der jeweiligen Sprache
-Diese Vorlage soll als Erleichterung für alle dienen die, vernünftigerweise, ihre Abschlussarbeit in \LaTeX verfassen wollen. Hilfestellungen zu zu \LaTeX findet ihr unter folgenden Links:
+\addcontentsline{toc}{chapter}{\abstractname}
+Diese Vorlage soll als Erleichterung für alle dienen die, vernünftigerweise, ihre Abschlussarbeit in \LaTeX \ verfassen wollen. Hilfestellungen zu zu \LaTeX \ findet ihr unter folgenden Links:
 
 \begin{center}
 The Not So Short Introduction to \LaTeX: \url{http://tobi.oetiker.ch/lshort/lshort.pdf} \\
@@ -21,12 +22,16 @@ Um dieses Dokument mit TexMaker kompilieren zu können sind folgende Einstellung
 	\item Pdf Viewer	
 	\end{enumerate}
 \end{itemize}
-Damit kann die Option Quick Build komfortabel genutzt werden.
+Damit kann die Option Quick Build komfortabel genutzt werden.\\
+
+\noindent Unter Windows (MikTeX) unbedingt das Paket \textbf{cm-super} installieren.\\
+Dieses beinhaltet Outline-Fonts welche - wenn installiert - automatisch statt den schlecht skalierbaren Bitmap-Fonts verwendet werden.
 
 % Kein Seitenumbruch zwischen deutschem und englischem abstract
 \let\oldcleardoublepage\cleardoublepage
 \renewcommand\cleardoublepage{}
 
+\addcontentsline{toc}{chapter}{Abstract}
 \chapter*{Abstract}
 Abstract in english.
 
