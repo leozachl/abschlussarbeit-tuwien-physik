@@ -1,10 +1,6 @@
 \documentclass[12pt,a4paper,twoside,open=right,%
 bibliography=totoc,BCOR=10mm]{scrreprt} % Schriftgröße, Seitenformat, Zweiseitig für Seitenränder, Bindcorrection
 \input{header.tex}
-\hypersetup{ % Setzt einige Werte die in den Eigenschaften des PDF gespeichert sind.
-	pdfdisplaydoctitle = true,
-	colorlinks = false, % Für Druck auf "false" setzen!
-}
 \writeIn{german} % Siehe header.tex. Setzt Dokumentsprache und damit Sprache von "Abstract", "Inhaltsverzeichnis", Datumsangaben etc.
 \input{titlepage.tex}
 
@@ -29,6 +25,7 @@ bibliography=totoc,BCOR=10mm]{scrreprt} % Schriftgröße, Seitenformat, Zweiseit
 \titlePageTUWienPhysik
 
 \input{abstract.tex}
+\pdfbookmark[0]{Inhaltsverzeichnis}{Contents} % Inhaltsverzeichnis als PDF-Bookmark aber nicht im TOC
 \tableofcontents \newpage
 \cleardoublepage % Macht, dass openright funktioniert.
 % \chapter macht das automatisch, \tableofcontents und \printbibliography machen das nicht.
