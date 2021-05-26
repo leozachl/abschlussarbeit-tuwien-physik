@@ -67,3 +67,12 @@
 \newcommand{\todo}[1]{{\color{Cerulean}(TODO: #1)}} % Einfach \todo{Text} verwenden!
 
 \newcommand{\blankpage}{ \newpage \thispagestyle{empty} \mbox{} \newpage }
+
+\hypersetup{ % Setzt einige Werte die in den Eigenschaften des PDF gespeichert sind.
+	bookmarksnumbered,
+	pdfdisplaydoctitle = true,
+	colorlinks, % Für Druck auf "false" setzen!
+	linkcolor={black}, % auch keine grellen Rahmen im View
+	citecolor={black},
+	urlcolor={black}
+}
