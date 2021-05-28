@@ -1,10 +1,12 @@
+\usepackage{tagpdf}
+\tagpdfsetup{tabsorder=structure,activate-all}
 \usepackage{ifpdf}
 \ifpdf
   \input{glyphtounicode.tex}    %Part of modern distribution
   \input{glyphtounicode-cmr.tex}     %Additionnal glyph: You must grab it from pdfx package
   \pdfgentounicode=1
   \pdfinterwordspaceon
-  \usepackage[a-2u,pdf17]{pdfx}
+  \usepackage[a-2a,ua-1,pdf17]{pdfx}
   \pdfomitcharset 1
 \else  %Place here the settings for other compilator
 \fi
