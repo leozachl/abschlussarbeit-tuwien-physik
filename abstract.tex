@@ -1,5 +1,7 @@
 \chapter*{\abstractname} % Korrekter Name für den Abstract in der jeweiligen Sprache
 \addcontentsline{toc}{chapter}{\abstractname}
+\tagstructbegin{tag=P}
+	\tagmcbegin{tag=P}
 Diese Vorlage soll als Erleichterung für alle dienen die, vernünftigerweise, ihre Abschlussarbeit in \LaTeX \ verfassen wollen. Hilfestellungen zu zu \LaTeX \ findet ihr unter folgenden Links:
 
 \begin{center}
@@ -22,19 +24,28 @@ Um dieses Dokument mit TexMaker kompilieren zu können sind folgende Einstellung
 	\item Pdf Viewer	
 	\end{enumerate}
 \end{itemize}
-Damit kann die Option Quick Build komfortabel genutzt werden.\\
+Damit kann die Option Quick Build komfortabel genutzt werden.
+ 	\tagmcend
+\tagstructend
 \section*{Bitmap-Fonts}
+\tagstructbegin{tag=P}
+	\tagmcbegin{tag=P}
 \noindent Unter Windows (MikTeX) unbedingt das Paket \textbf{cm-super} installieren.\\
 Dieses beinhaltet Outline-Fonts welche - wenn installiert - automatisch statt den schlecht skalierbaren Bitmap-Fonts verwendet werden.
 \section*{Grafiken}
 \noindent Diagramme sollten nach Möglichkeit als Vektorgrafiken eingebunden werden. Auch die nachträgliche Beschriftung von Rasterimages sollte in Illustrator, LibreDraw, oder ähnlich gemacht werden.
+	\tagmcend
+\tagstructend
 % Kein Seitenumbruch zwischen deutschem und englischem abstract
 \let\oldcleardoublepage\cleardoublepage
 \renewcommand\cleardoublepage{}
 
 \addcontentsline{toc}{chapter}{Abstract}
 \chapter*{Abstract}
+\tagstructbegin{tag=P}
+	\tagmcbegin{tag=P}
 Abstract in english.
-
+	\tagmcend
+\tagstructend
 \let\cleardoublepage\oldcleardoublepage
 \newpage
